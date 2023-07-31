@@ -23,7 +23,7 @@ class MyDocker(DockWidget):
         prompt_label = QLabel("Prompt:")
         prompt_label.setAlignment(Qt.AlignBottom)
 
-        default_prompt = "Magical Forest Island, by Studio Ghibli and Carl Spitzweg"
+        default_prompt = "Ancient Magic Forest Island, by Carl Spitzweg and Thomas Moran, matte painting, masterpiece"
         self.input_text = QPlainTextEdit(default_prompt, mainWidget)
         self.input_text.textChanged.connect(self.prompt_changed)
         self.text_in = default_prompt
